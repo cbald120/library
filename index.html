@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./java/java.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Library</title>
+</head>
+<body>
+    
+<div id="table">
+Library Catalog
+
+</div>
+
+    <button id="button">Display</button>
+
+<div class="container"> 
+    <form> 
+        <fieldset> 
+        <legend>New book submission</legend>
+
+        <div class="input">
+            <label for="title"></label>
+            <input type="text" id="box" placeholder="Book Title" onfocus="this.value=''" value="title" required>
+            </div>
+
+            <div class="input">
+                <label for="author"></label>
+                <input type="text" id="box" placeholder="Author Name" onfocus="this.value=''" value="author" required>
+                </div>
+
+                <div class="input">
+                    <label for="pages"></label>
+                    <input type="number" id="box" placeholder="Total Pages" onfocus="this.value=''" value="pages" required>
+                    </div>
+
+                 <div class="input">
+                        <label for="read"></label>
+                        <input type="text" id="box" placeholder="Did you read it?" onfocus="this.value=''" value="read" required>
+                        </div>
+
+    <input type="submit" onclick="addBookToLibrary(books)"></input> <!--this is an experiment-->
+</fieldset> 
+</form>
+</div>
+
+</body>
+</html>
