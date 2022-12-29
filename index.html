@@ -17,32 +17,39 @@ Library Catalog
 
     <button id="button">Display</button>
 
-<div class="container"> 
-    <form> 
+<div id="container"> 
+    <form class="form"> 
         <fieldset> 
         <legend>New book submission</legend>
 
         <div class="input">
             <label for="title"></label>
-            <input type="text" id="box" placeholder="Book Title" onfocus="this.value=''" value="title" required>
+            <input type="text" id="title" placeholder="Book Title" onfocus="this.value=''"  required>
             </div>
 
             <div class="input">
                 <label for="author"></label>
-                <input type="text" id="box" placeholder="Author Name" onfocus="this.value=''" value="author" required>
+                <input type="text" id="author" placeholder="Author Name" onfocus="this.value=''"  required>
                 </div>
 
                 <div class="input">
                     <label for="pages"></label>
-                    <input type="number" id="box" placeholder="Total Pages" onfocus="this.value=''" value="pages" required>
+                    <input type="text" id="pages" placeholder="Total Pages" onfocus="this.value=''"  required>
                     </div>
 
                  <div class="input">
-                        <label for="read"></label>
-                        <input type="text" id="box" placeholder="Did you read it?" onfocus="this.value=''" value="read" required>
+                        <label for="read">Read?</label>
+                        <input type="dropdown" id="read" multiple >
+                        <select name="Did you finish this book?">
+                            <option value="yes">Yes, I did</option>
+                            <option value="no">Nope, not worth it</option>
+                            <option value="almost">I'm almost done</option>
+                        </select>
+
                         </div>
 
-    <input type="submit" onclick="addBookToLibrary(books)"></input> <!--this is an experiment-->
+    <input type="button" id="submit" name="submit" onclick="data()"></input> <!--this is an experiment-->
+    <input type="reset" id="reset" name="reset">
 </fieldset> 
 </form>
 </div>
